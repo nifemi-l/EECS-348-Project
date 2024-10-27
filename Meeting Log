@@ -42,3 +42,14 @@ Microsoft Teams Meeting
 We completed the supplementary requirements, and added some info to other sections as well.  We ran into some formatting issues with the table of contents, but made it
 look the best that we could while retaining the necessary information.  We completed the Software Requirements Specification Document, and I will turn it in to be graded.
 It was the first meeting that all members were in attendance for, which is great!
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+WHEN: Sunday, October 27, 2024
+PURPOSE: 5th team meeting; addressed grader's suggestions for Software Requirements Specification Document and began the Software Architecture Document
+ATTENDENCE: Hannah Prosch, Daniel Van Dalsem, Emma Roy, Nifemi Lawal, Jonathan Kazmaier, Sneha Thomas
+
+Microsoft Teams Meeting
+We addressed the grader's suggestions for our Software Requirements Specification Document as a team, then it was uploaded to GitHub, and the grader was notified.  
+Jonathan has created an arthimetic parser in the past in Python, and he shared the code with the team so we could better understand how programs like this work.
+Then, the team started working on the Software Architecture Document, and assigned outselves sections to complete.  During our next meeting, we plan on going over
+more about how the code for our project will work, and get the Software Architecture document closer to completion.
