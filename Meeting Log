@@ -53,3 +53,17 @@ We addressed the grader's suggestions for our Software Requirements Specificatio
 Jonathan has created an arthimetic parser in the past in Python, and he shared the code with the team so we could better understand how programs like this work.
 Then, the team started working on the Software Architecture Document, and assigned outselves sections to complete.  During our next meeting, we plan on going over
 more about how the code for our project will work, and get the Software Architecture document closer to completion.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+WHEN: Monday, November 4, 2024
+PURPOSE: 6th team meeting; Presentation by Jonathan and Work on Software Architecture Document
+ATTENDENCE: Daniel Van Dalsem, Hannah Prosch, Warren Tan, Jonathan Kazmaier, Emma Roy, Sneha Thomas, Nifemi Lawal
+
+Microsoft Teams Meeting
+To begin, Jonathan gave a presentation about the parser project he previously completed with Python.  He created a GitHub repository so we could look at the code,
+and he talked through how each of the pieces work and how the program is structured.  Abstract Syntax Trees and enumeration played a major role in the program.
+Team members asked questions to clarify how it works, and we will continue to work with the code to get a better understanding.  We did some work on the Software Architecture 
+Document, but did not complete it.  Jonathan pointed out that it is asking for diagrams for how the program is structured, but we aren't sure how that would look with nodes,
+as the examples we found online look more appropraite for programs with classes with set variables and functions.  Beccause this project will be recursive, we'll continue
+to research if these diagrams are possible to create for this complex of a program.  Hannah will follow up later in the week, and ensure that this project is submitted 
+prior to the due date.
