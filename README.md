@@ -2,7 +2,7 @@ Emma Roy
 e664r593@ku.edu  
     • Availability: Monday: 12PM – 3PM, Tuesday & Thursday: 7PM – 9PM, Wednesday: 5PM-8PM, Friday: 4PM- 7PM  
     • Computing Platform Experience: Visual Studio Code  
-    • Programming Language Knowledge: Python, C, HTML, CSS  
+    • Programming Language Knowledge: Python, C, HTML, CSS, SQL  
   
 Nifemi Lawal  
 w271l032@ku.edu  
