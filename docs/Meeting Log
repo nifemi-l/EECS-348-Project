@@ -79,3 +79,22 @@ we talked about either splitting up one of the more complex modules between 2 pe
 any set decisions, as most of our members did not attend today's meeting.  Sneha offered to get some templates for each of the files uploaded to GitHub, and I reached out to the team to 
 set a deadline on which modules they prefer to complete by Wednesday, November 13th, so they can be assigned and start coding before next Sunday's meeting.  The last two deliverables we
 need to complete require our program to be functioning, so we will focus on the coding now.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+WHEN: Sunday, November 17, 2024
+PURPOSE: Coding Update
+ATTENDENCE: Hannah Prosch, Daniel Van Dalsem, Sneha Thomas, Emma Roy, Nifemi Lawal, Jonathan Kazmaier
+
+Microsoft Teams Meeting
+On Wednesday, the sections of code were assigned as follows:
+Interpreter - Emma
+Lexer - Jonathan
+Main - Daniel
+Nodes - Sneha
+Parser - Nifemi
+Tokens - Warren
+Error Handling - Hannah
+During today's meeting, we updated one another on how things were progressing.  Jonathan, who completed a similar project in the past, pointed out that the first files that need to be
+completed for the project are the Tokens and Nodes.  Sneha said she would get the nodes section completed soon, and Hannah said she would reach out to Warren again, as nobody had heard
+from him since we made the code assignments, as Tokens needs to be finished so others can get started with their assignments.  We discussed a target date for the code to be completed, 
+and settled on December 1st.  This should give us enough time to complete the test cases and users manual document, for everything to be completed by the due date of December 8th.
