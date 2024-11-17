@@ -1,3 +1,4 @@
+/*Hannah Prosch*/
 #ifndef ErrorHandling
 #define ErrorHandling
     #include <stdio.h>
