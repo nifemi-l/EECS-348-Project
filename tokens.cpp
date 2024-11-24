@@ -20,9 +20,14 @@ struct Token {
     TokenType type;
     string value = "";
 
-    // initialiser
-    Token::Token(TokenType type, string value)
-        : type(type), value(value)
+    // initializer
+    // Token::Token(TokenType type, string value)
+    //     : type(type), value(value)
+    // {}
+    
+    // MOD: remove extra qualification since definition is within scope of Token
+    Token(TokenType type, string value)
+    : type(type), value(value)
     {}
 
     // tokens that do not have a number 
@@ -33,10 +38,17 @@ struct Token {
 
     public:
         // returns name of token and value, if it is a number
+        // string toString(){
+        //     string repr = tokenTypeName(type) + value;
+        //     return repr;
+        // }
+
+        // MOD: add space for clarity
         string toString(){
-            string repr = tokenTypeName(type) + value;
+            string repr = tokenTypeName(type) + ' ' + value;
             return repr;
         }
+
 
     private:
         // returns the token type as a string
