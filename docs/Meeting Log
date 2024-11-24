@@ -98,3 +98,15 @@ During today's meeting, we updated one another on how things were progressing.  
 completed for the project are the Tokens and Nodes.  Sneha said she would get the nodes section completed soon, and Hannah said she would reach out to Warren again, as nobody had heard
 from him since we made the code assignments, as Tokens needs to be finished so others can get started with their assignments.  We discussed a target date for the code to be completed, 
 and settled on December 1st.  This should give us enough time to complete the test cases and users manual document, for everything to be completed by the due date of December 8th.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+WHEN: Sunday, November 24, 2024
+PURPOSE: Coding Update
+ATTENDENCE: Daniel Van Dalsem, Nifemi Lawal, Hannah Prosch, Jonathan Kazmaier
+
+Microsoft Teams Meeting
+Emma and Sneha notified the team that they couldn't attend today's meeting.  We discussed header files, and ultimately made the decision to remove them (with an exception for the
+error handling class header) to simplify the coding process.  Nifemi made a few edits to Warren's code in the Tokens file so that it would work with the Lexer file he created.  Nifemi
+accidentally completed the Lexer file instead of the Parser file, so Jonathan will code the parser, but Nifemi and Hannah both offered to help him if needed.  We discussed the next files
+to be created are the Parser and Main files, and the Interpreter will be last.  We are hoping to stay on track for a December 1st target completition date, to ensure we have enough time
+to complete the last two documents.
