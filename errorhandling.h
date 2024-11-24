@@ -1,18 +1,20 @@
 /*Hannah Prosch*/
-#ifndef ErrorHandling
-#define ErrorHandling
-    #include <stdio.h>
-    #include <iostream>
+
+#ifndef ERRORHANDLING_H
+#define ERRORHANDLING_H
+
     #include <exception>
     #include <string>
-    using namespace std;
 
-    class ErrorHandling {
-        public: 
-            ErrorHandling(const std::string& message);
-            const char* what();
-        private:
-            std::string message_;
+    class ErrorHandling : public std::exception {
+
+    public:
+        explicit ErrorHandling(const std::string& message);
+
+        const char* what() const noexcept override;
+
+    private:
+        std::string message_;
     };
 
 #endif
