@@ -43,12 +43,12 @@ Warren Tan
     • Computing Platform Experience: Visual Studio Code, Eclipse  
     • Programming Language Knowledge: Python, Java, Javascript, HTML, Lua  
   
-Person	Unified Process for EDUcation Role  
-Nifemi Lawal	UI/UX Developer  
-Hannah Prosch	Project Manager  
-Daniel Van Dalsem	Change Control Manager  
-Sneha Thomas	Test Lead  
-Emma Roy	Documentation Manager  
-Warren Tan	Quality Assurance Manager  
-Jonathan Kazmaier	Lead Developer  
+Person	Unified Process for EDUcation Roles  
+Nifemi Lawal: UI/UX Developer  
+Hannah Prosch: Project Manager  
+Daniel Van Dalsem: Change Control Manager  
+Sneha Thomas: Test Lead  
+Emma Roy: Documentation Manager  
+Warren Tan: Quality Assurance Manager  
+Jonathan Kazmaier: Lead Developer  
   
