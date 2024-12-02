@@ -16,6 +16,9 @@ class NumberNode{
     std::string repr() const{
         return std::to_string(value);
     }
+    double getValue() const {
+        return value;
+    }
 };
 
 class AddNode{
@@ -29,6 +32,8 @@ class AddNode{
     std::string repr() const {
         return "(" + left->repr() + "+" + right->repr() + ")"; //-> is used to access members of a class through a pointer
     }
+    NumberNode* getLeft() const { return left; }
+    NumberNode* getRight() const { return right; }
 };
 
 class SubtractNode{
@@ -42,6 +47,8 @@ class SubtractNode{
     std::string repr() const{
         return "(" + left -> repr() + "-" + right -> repr() + ")";
     }
+    NumberNode* getLeft() const { return left; }
+    NumberNode* getRight() const { return right; }
 };
 
 class MultiplyNode{
@@ -55,6 +62,8 @@ class MultiplyNode{
     std::string repr() const{
         return "(" + left -> repr() + "*" + right -> repr() + ")";
     }
+    NumberNode* getLeft() const { return left; }
+    NumberNode* getRight() const { return right; }
 };
 
 class DivideNode{
@@ -68,6 +77,8 @@ class DivideNode{
     std::string repr() const{
         return "(" + left -> repr() + "/" + right -> repr() + ")";
     }
+    NumberNode* getLeft() const { return left; }
+    NumberNode* getRight() const { return right; }
 };
 
 class ModulusNode{
@@ -81,6 +92,8 @@ class ModulusNode{
     std::string repr() const{
         return "(" + left -> repr() + "%" + right -> repr() + ")";
     }
+    NumberNode* getLeft() const { return left; }
+    NumberNode* getRight() const { return right; }
 };
 
 class ExponentNode{
@@ -94,6 +107,8 @@ class ExponentNode{
     std::string repr() const{
         return "(" + left -> repr() + "**" + right -> repr() + ")";
     }
+    NumberNode* getLeft() const { return left; }
+    NumberNode* getRight() const { return right; }
 };
 
 class PlusNode {
@@ -105,6 +120,7 @@ public:
     std::string repr() const {
         return "(+" + node->repr() + ")";
     }
+    NumberNode* getNode() const { return node; }
 };
 
 class MinusNode {
@@ -116,4 +132,5 @@ public:
     std::string repr() const {
         return "(-" + node->repr() + ")";
     }
+    NumberNode* getNode() const { return node; }
 };
