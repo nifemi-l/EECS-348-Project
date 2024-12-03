@@ -1,34 +1,52 @@
-/*Daniel Van Dalsem*/
-#include <string>
+#include <iostream>
 #include <vector>
-#include "lexer.cpp"
-#include "parser.cpp"
-#include "interpreter.cpp"
-using namespace std;
-//import lexer, parser, interpreter
+#include <string>
+#include "tokens.h"
+#include "nodes.h"
+#include "lexer.h"
+#include "parser.h"
+#include "interpreter.h"
 
-int main(){
-while (true) {
-	try {
-		string text = "";
-		cout << "> ";
-		cin >> text;
-		Lexer lexer = Lexer(text);
-		vector<Token> tokens = lexer.generateTokens();
-		Parser parser = Parser(tokens);
-		//I am not sure what type this will be???
-		vector<Token> tree = parser.parse();
-		// I don't think you can return null in c++ in this case so
-		if (false){
-			continue;
+int main()
+{
+	try
+	{
+		// Prompt the user to enter an expression
+		std::cout << "Enter a mathematical expression: ";
+		std::string input;
+		std::getline(std::cin, input);
+
+		// Step 1: Lexical Analysis (Tokenization)
+		Lexer lexer(input);
+		std::vector<Token> tokens = lexer.generateTokens();
+
+		std::cout << "\nTokens:" << std::endl;
+		for (const Token &token : tokens)
+		{
+			std::cout << token.toString() << std::endl;
 		}
-		Interpreter interpreter = Interpreter();
-		// I also don't know what type this will be
-		float value = interpreter.visit(tree);
-		cout<<value<<endl;
+
+		// Step 2: Parsing (Build AST)
+		Parser parser(tokens);
+		Node *ast = parser.parse();
+
+		// Step 3: Print the AST representation
+		std::cout << "\nAbstract Syntax Tree:" << std::endl;
+		std::cout << ast->repr() << std::endl;
+
+		// Step 4: Interpret the AST
+		Interpreter interpreter;
+		double result = interpreter.visit(ast);
+
+		std::cout << "\nResult: " << result << std::endl;
+
+		// Clean up the AST
+		delete ast;
 	}
-	catch (const std::exception& e) {
-	cout<<e.what();
+	catch (const std::exception &e)
+	{
+		std::cerr << "Error: " << e.what() << std::endl;
 	}
-}
+
+	return 0;
 }

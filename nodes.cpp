@@ -1,136 +1,110 @@
-#include <iostream>
-#include <string>
-#include <cmath>
-using namespace std;
+#include "nodes.h"
 
-//create classes for NumberNode, add, subtract, multiply, divide, 
-//modulus, exponent, plus (positive value), and minus (negative value)
+// NumberNode Implementation
+NumberNode::NumberNode(double value) : value(value) {}
 
-class NumberNode{
-    private:
-    double value;
+double NumberNode::getValue() const
+{
+    return value;
+}
 
-    public:
-    NumberNode (double value) : value(value) {}
+std::string NumberNode::repr() const
+{
+    return std::to_string(value);
+}
 
-    std::string repr() const{
-        return std::to_string(value);
-    }
-    double getValue() const {
-        return value;
-    }
-};
+// BinaryNode Implementation
+BinaryNode::BinaryNode(Node *left, Node *right) : left(left), right(right) {}
 
-class AddNode{
-    private:
-    NumberNode* left;  // pointer to left operand
-    NumberNode* right; // pointer to right operand
+BinaryNode::~BinaryNode()
+{
+    delete left;
+    delete right;
+}
 
-    public:
-    AddNode(NumberNode* left, NumberNode* right) : left(left), right(right) {}
+Node *BinaryNode::getLeft() const
+{
+    return left;
+}
 
-    std::string repr() const {
-        return "(" + left->repr() + "+" + right->repr() + ")"; //-> is used to access members of a class through a pointer
-    }
-    NumberNode* getLeft() const { return left; }
-    NumberNode* getRight() const { return right; }
-};
+Node *BinaryNode::getRight() const
+{
+    return right;
+}
 
-class SubtractNode{
-    private:
-    NumberNode* left;  // pointer to left operand
-    NumberNode* right; // pointer to right operand
+// AddNode Implementation
+AddNode::AddNode(Node *left, Node *right) : BinaryNode(left, right) {}
 
-    public:
-    SubtractNode(NumberNode* left, NumberNode* right) : left(left), right(right) {}
+std::string AddNode::repr() const
+{
+    return "(" + left->repr() + " + " + right->repr() + ")";
+}
 
-    std::string repr() const{
-        return "(" + left -> repr() + "-" + right -> repr() + ")";
-    }
-    NumberNode* getLeft() const { return left; }
-    NumberNode* getRight() const { return right; }
-};
+// SubtractNode Implementation
+SubtractNode::SubtractNode(Node *left, Node *right) : BinaryNode(left, right) {}
 
-class MultiplyNode{
-    private:
-    NumberNode* left;  // pointer to left operand
-    NumberNode* right; // pointer to right operand
+std::string SubtractNode::repr() const
+{
+    return "(" + left->repr() + " - " + right->repr() + ")";
+}
 
-    public:
-    MultiplyNode(NumberNode* left, NumberNode* right) : left(left), right(right) {}
+// MultiplyNode Implementation
+MultiplyNode::MultiplyNode(Node *left, Node *right) : BinaryNode(left, right) {}
 
-    std::string repr() const{
-        return "(" + left -> repr() + "*" + right -> repr() + ")";
-    }
-    NumberNode* getLeft() const { return left; }
-    NumberNode* getRight() const { return right; }
-};
+std::string MultiplyNode::repr() const
+{
+    return "(" + left->repr() + " * " + right->repr() + ")";
+}
 
-class DivideNode{
-    private:
-    NumberNode* left;  // pointer to left operand
-    NumberNode* right; // pointer to right operand
+// DivideNode Implementation
+DivideNode::DivideNode(Node *left, Node *right) : BinaryNode(left, right) {}
 
-    public:
-    DivideNode(NumberNode* left, NumberNode* right) : left(left), right(right) {}
+std::string DivideNode::repr() const
+{
+    return "(" + left->repr() + " / " + right->repr() + ")";
+}
 
-    std::string repr() const{
-        return "(" + left -> repr() + "/" + right -> repr() + ")";
-    }
-    NumberNode* getLeft() const { return left; }
-    NumberNode* getRight() const { return right; }
-};
+// ModulusNode Implementation
+ModulusNode::ModulusNode(Node *left, Node *right) : BinaryNode(left, right) {}
 
-class ModulusNode{
-    private:
-    NumberNode* left;  // pointer to left operand
-    NumberNode* right; // pointer to right operand
+std::string ModulusNode::repr() const
+{
+    return "(" + left->repr() + " % " + right->repr() + ")";
+}
 
-    public:
-    ModulusNode(NumberNode* left, NumberNode* right) : left(left), right(right) {}
+// ExponentNode Implementation
+ExponentNode::ExponentNode(Node *left, Node *right) : BinaryNode(left, right) {}
 
-    std::string repr() const{
-        return "(" + left -> repr() + "%" + right -> repr() + ")";
-    }
-    NumberNode* getLeft() const { return left; }
-    NumberNode* getRight() const { return right; }
-};
+std::string ExponentNode::repr() const
+{
+    return "(" + left->repr() + " ** " + right->repr() + ")";
+}
 
-class ExponentNode{
-    private:
-    NumberNode* left;  // pointer to left operand
-    NumberNode* right; // pointer to right operand
+// UnaryNode Implementation
+UnaryNode::UnaryNode(Node *node) : node(node) {}
 
-    public:
-    ExponentNode(NumberNode* left, NumberNode* right) : left(left), right(right) {}
+UnaryNode::~UnaryNode()
+{
+    delete node;
+}
 
-    std::string repr() const{
-        return "(" + left -> repr() + "**" + right -> repr() + ")";
-    }
-    NumberNode* getLeft() const { return left; }
-    NumberNode* getRight() const { return right; }
-};
+Node *UnaryNode::getNode() const
+{
+    return node;
+}
 
-class PlusNode {
-public:
-    NumberNode* node;
+// PlusNode Implementation
+PlusNode::PlusNode(Node *node) : UnaryNode(node) {}
 
-    PlusNode(NumberNode* node) : node(node) {}
+std::string PlusNode::repr() const
+{
+    return "(+" + node->repr() + ")";
+}
 
-    std::string repr() const {
-        return "(+" + node->repr() + ")";
-    }
-    NumberNode* getNode() const { return node; }
-};
+// MinusNode Implementation
+MinusNode::MinusNode(Node *node) : UnaryNode(node) {}
 
-class MinusNode {
-public:
-    NumberNode* node;
-
-    MinusNode(NumberNode* node) : node(node) {}
-
-    std::string repr() const {
-        return "(-" + node->repr() + ")";
-    }
-    NumberNode* getNode() const { return node; }
-};
+std::string MinusNode::repr() const
+{
+    return "(-" + node->repr() + ")";
+}
