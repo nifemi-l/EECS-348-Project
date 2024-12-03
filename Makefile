@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall
-SRC = main.cpp nodes.cpp tokens.cpp lexer.cpp parser.cpp interpreter.cpp
+SRC = main.cpp nodes.cpp tokens.cpp lexer.cpp parser.cpp interpreter.cpp errorhandling.cpp
 OBJ = $(SRC:.cpp=.o)
 TARGET = main
 
