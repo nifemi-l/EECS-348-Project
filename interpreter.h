@@ -2,6 +2,7 @@
 #define INTERPRETER_H
 
 #include "nodes.h"
+#include "errorhandling.h"
 
 class Interpreter
 {

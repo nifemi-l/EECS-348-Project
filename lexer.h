@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include "tokens.h"
+#include "errorhandling.h"
 
 class Lexer
 {

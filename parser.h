@@ -5,6 +5,7 @@
 #include <stdexcept>
 #include "tokens.h"
 #include "nodes.h"
+#include "errorhandling.h"
 
 class Parser
 {

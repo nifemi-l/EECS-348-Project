@@ -23,7 +23,7 @@ void Parser::advance()
 // Raises a syntax error
 void Parser::raise_error() const
 {
-    throw std::runtime_error("Syntax Error at token position " + std::to_string(pos));
+    throw ErrorHandling("Syntax Error at token position " + std::to_string(pos));
 }
 
 // Parses addition and subtraction

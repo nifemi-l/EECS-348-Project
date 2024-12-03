@@ -26,7 +26,7 @@ double Interpreter::visit(Node *node)
     if (auto minusNode = dynamic_cast<MinusNode *>(node))
         return visitMinus(minusNode);
 
-    throw std::runtime_error("Unknown node type");
+    throw ErrorHandling("Unknown node type");
 }
 
 // Visit methods for specific node types
@@ -53,8 +53,9 @@ double Interpreter::visitMultiply(MultiplyNode *node)
 double Interpreter::visitDivide(DivideNode *node)
 {
     double right = visit(node->getRight());
-    if (right == 0)
-        throw std::runtime_error("Division by zero");
+    if (right == 0) 
+        throw ErrorHandling("Divison by zero");
+
     return visit(node->getLeft()) / right;
 }
 
@@ -63,7 +64,7 @@ double Interpreter::visitModulus(ModulusNode *node)
     int left = static_cast<int>(visit(node->getLeft()));
     int right = static_cast<int>(visit(node->getRight()));
     if (right == 0)
-        throw std::runtime_error("Modulus by zero");
+        throw ErrorHandling("Modulus by zero");
     return left % right;
 }
 

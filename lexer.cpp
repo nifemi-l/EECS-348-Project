@@ -91,7 +91,7 @@ vector<Token> Lexer::generateTokens()
         }
         else
         {
-            throw runtime_error("Illegal character: " + string(1, current_char));
+            throw ErrorHandling("Illegal character: " + string(1, current_char));
         }
     }
 
