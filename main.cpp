@@ -26,18 +26,19 @@ int main()
       Lexer lexer(input);
       std::vector<Token> tokens = lexer.generateTokens();
 
-      // std::cout << "\nTokens:" << std::endl;
-      // for (const Token &token : tokens) {
-      //   std::cout << token.toString() << std::endl;
-      // }
+      std::cout << "\nTokens:" << std::endl;
+      for (const Token &token : tokens)
+      {
+        std::cout << token.toString() << std::endl;
+      }
 
       // Step 2: Parsing (Build AST)
       Parser parser(tokens);
       Node *ast = parser.parse();
 
       // Step 3: Print the AST representation
-      // std::cout << "\nAbstract Syntax Tree:" << std::endl;
-      // std::cout << ast->repr() << std::endl;
+      std::cout << "\nAbstract Syntax Tree:" << std::endl;
+      std::cout << ast->repr() << std::endl;
 
       // Step 4: Interpret the AST
       Interpreter interpreter;
