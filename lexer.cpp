@@ -45,6 +45,28 @@ vector<Token> Lexer::generateTokens()
         else if (isdigit(current_char) || current_char == '.')
         {
             tokens.push_back(generateNum());
+
+            // Insert MULTIPLY if a number is followed by '('
+            if (current_char == '(')
+            {
+                tokens.push_back(Token(TokenType::MULTIPLY));
+            }
+        }
+        else if (current_char == '(')
+        {
+            // Insert MULTIPLY if the previous token is a number or ')'
+            if (!tokens.empty() && (tokens.back().type == TokenType::NUMBER || tokens.back().type == TokenType::RPAREN))
+            {
+                tokens.push_back(Token(TokenType::MULTIPLY));
+            }
+
+            tokens.push_back(Token(TokenType::LPAREN));
+            advance();
+        }
+        else if (current_char == ')')
+        {
+            tokens.push_back(Token(TokenType::RPAREN));
+            advance();
         }
         else if (current_char == '+')
         {
@@ -77,16 +99,6 @@ vector<Token> Lexer::generateTokens()
         else if (current_char == '%')
         {
             tokens.push_back(Token(TokenType::MODULUS));
-            advance();
-        }
-        else if (current_char == '(')
-        {
-            tokens.push_back(Token(TokenType::LPAREN));
-            advance();
-        }
-        else if (current_char == ')')
-        {
-            tokens.push_back(Token(TokenType::RPAREN));
             advance();
         }
         else
