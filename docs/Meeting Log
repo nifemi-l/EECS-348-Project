@@ -121,3 +121,14 @@ Jonathan notified the team that he couldn't attend today's meeting, but that he 
 the interpreter today.  Because Nifemi and Sneha are done with their coding portions, they are getting started on the Test Cases document.  Daniel and Emma will begin on the Users
 Manual once they have completed their coding.  Hannah will reach out to Warren to help with the testing and finishing up the necessary documents.  We plan on working as a team this week
 to ensure everying runs smoothly and is completed on time.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+WHEN: Suday, December 8, 2024
+PURPOSE: Final Meeting
+ATTENDENCE: Daniel Van Dalsem, Emma Roy, Sneha Thomas, Nifemi Lawal, Hannah Prosch, Jonathan Kazmaier, Warren Tan
+
+Microsoft Teams Meeting
+We discussed our only failed test case from the project PDF, Missing Operator: 5 (2 + 3).  Jonathan was able to make the necessary corrections within the code to fix the issue, so that
+our program properly handles implied multiplication with parenthesis.  We discussed removing the comments that helped us develop our code so that the terminal output is cleaner.  Then, we
+discussed wrapping up the final two documents, the User Manual and Test Cases so they can be turned in.  Warren pointed out that we had some ".o" files that had accidentally been uploaded
+to GitHub, and Daniel was able to resolve the issue.  Every member of the team was present for the meeting, which was great!
