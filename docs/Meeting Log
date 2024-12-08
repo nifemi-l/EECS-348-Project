@@ -50,8 +50,8 @@ ATTENDENCE: Hannah Prosch, Daniel Van Dalsem, Emma Roy, Nifemi Lawal, Jonathan K
 
 Microsoft Teams Meeting
 We addressed the grader's suggestions for our Software Requirements Specification Document as a team, then it was uploaded to GitHub, and the grader was notified.  
-Jonathan has created an arthimetic parser in the past in Python, and he shared the code with the team so we could better understand how programs like this work.
-Then, the team started working on the Software Architecture Document, and assigned outselves sections to complete.  During our next meeting, we plan on going over
+Jonathan has created an arithmetic parser in the past in Python, and he shared the code with the team so we could better understand how programs like this work.
+Then, the team started working on the Software Architecture Document, and assigned ourselves sections to complete.  During our next meeting, we plan on going over
 more about how the code for our project will work, and get the Software Architecture document closer to completion.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ To begin, Jonathan gave a presentation about the parser project he previously co
 and he talked through how each of the pieces work and how the program is structured.  Abstract Syntax Trees and enumeration played a major role in the program.
 Team members asked questions to clarify how it works, and we will continue to work with the code to get a better understanding.  We did some work on the Software Architecture 
 Document, but did not complete it.  Jonathan pointed out that it is asking for diagrams for how the program is structured, but we aren't sure how that would look with nodes,
-as the examples we found online look more appropraite for programs with classes with set variables and functions.  Beccause this project will be recursive, we'll continue
+as the examples we found online look more appropriate for programs with classes with set variables and functions.  Because this project will be recursive, we'll continue
 to research if these diagrams are possible to create for this complex of a program.  Hannah will follow up later in the week, and ensure that this project is submitted 
 prior to the due date.
 
@@ -74,7 +74,7 @@ PURPOSE: Determine next steps for the project; discuss roles and assignments
 ATTENDENCE: Sneha Thomas, Daniel Van Dalsem, Hannah Prosch
 
 Microsoft Teams Meeting
-Today, we discussed the separate parts of the project so we can assign each member a portion of the coding.  Since our team has 7 people and our Software Architecture has 6 modlues/packages, 
+Today, we discussed the separate parts of the project so we can assign each member a portion of the coding.  Since our team has 7 people and our Software Architecture has 6 modules/packages, 
 we talked about either splitting up one of the more complex modules between 2 people, or having someone work on a more extensive error handling module.  We didn't feel comfortable making
 any set decisions, as most of our members did not attend today's meeting.  Sneha offered to get some templates for each of the files uploaded to GitHub, and I reached out to the team to 
 set a deadline on which modules they prefer to complete by Wednesday, November 13th, so they can be assigned and start coding before next Sunday's meeting.  The last two deliverables we
@@ -108,7 +108,7 @@ Microsoft Teams Meeting
 Emma and Sneha notified the team that they couldn't attend today's meeting.  We discussed header files, and ultimately made the decision to remove them (with an exception for the
 error handling class header) to simplify the coding process.  Nifemi made a few edits to Warren's code in the Tokens file so that it would work with the Lexer file he created.  Nifemi
 accidentally completed the Lexer file instead of the Parser file, so Jonathan will code the parser, but Nifemi and Hannah both offered to help him if needed.  We discussed the next files
-to be created are the Parser and Main files, and the Interpreter will be last.  We are hoping to stay on track for a December 1st target completition date, to ensure we have enough time
+to be created are the Parser and Main files, and the Interpreter will be last.  We are hoping to stay on track for a December 1st target completion date, to ensure we have enough time
 to complete the last two documents.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -120,10 +120,10 @@ Microsoft Teams Meeting
 Jonathan notified the team that he couldn't attend today's meeting, but that he was nearly finished with the parser.  Daniel completed the main section, and Emma is on track to complete
 the interpreter today.  Because Nifemi and Sneha are done with their coding portions, they are getting started on the Test Cases document.  Daniel and Emma will begin on the Users
 Manual once they have completed their coding.  Hannah will reach out to Warren to help with the testing and finishing up the necessary documents.  We plan on working as a team this week
-to ensure everying runs smoothly and is completed on time.
+to ensure everything runs smoothly and is completed on time.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-WHEN: Suday, December 8, 2024
+WHEN: Sunday, December 8, 2024
 PURPOSE: Final Meeting
 ATTENDENCE: Daniel Van Dalsem, Emma Roy, Sneha Thomas, Nifemi Lawal, Hannah Prosch, Jonathan Kazmaier, Warren Tan
 
